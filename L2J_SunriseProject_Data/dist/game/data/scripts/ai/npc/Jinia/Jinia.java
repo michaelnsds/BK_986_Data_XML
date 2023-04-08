@@ -36,7 +36,7 @@ public final class Jinia extends AbstractNpcAI
 	private static final int FROZEN_CORE = 15469;
 	private static final int BLACK_FROZEN_CORE = 15470;
 	// Misc
-	private static final int MIN_LEVEL = 82;
+	// private static final int MIN_LEVEL = 82;
 	
 	public Jinia()
 	{
@@ -86,23 +86,23 @@ public final class Jinia extends AbstractNpcAI
 	@Override
 	public String onFirstTalk(L2Npc npc, L2PcInstance player)
 	{
-		if (player.isGM())
+		// if (player.isGM())
 		{
 			return "32781-02.html";
 		}
 		
-		final QuestState st = player.getQuestState(Q10286_ReunionWithSirra.class.getSimpleName());
-		if ((st != null) && (player.getLevel() >= MIN_LEVEL))
-		{
-			if (st.isCompleted())
-			{
-				return "32781-02.html";
-			}
-			else if (st.isCond(5) || st.isCond(6))
-			{
-				return "32781-09.html";
-			}
-		}
-		return "32781-01.html";
+		// final QuestState st = player.getQuestState(Q10286_ReunionWithSirra.class.getSimpleName());
+		// if ((st != null) && (player.getLevel() >= MIN_LEVEL))
+		// {
+		// if (st.isCompleted())
+		// {
+		// return "32781-02.html";
+		// }
+		// else if (st.isCond(5) || st.isCond(6))
+		// {
+		// return "32781-09.html";
+		// }
+		// }
+		// return "32781-01.html";
 	}
 }

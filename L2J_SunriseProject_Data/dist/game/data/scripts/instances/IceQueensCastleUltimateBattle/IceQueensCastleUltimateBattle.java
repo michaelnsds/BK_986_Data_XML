@@ -43,7 +43,6 @@ import l2r.gameserver.model.actor.instance.L2QuestGuardInstance;
 import l2r.gameserver.model.actor.instance.L2RaidBossInstance;
 import l2r.gameserver.model.holders.SkillHolder;
 import l2r.gameserver.model.instancezone.InstanceWorld;
-import l2r.gameserver.model.quest.QuestState;
 import l2r.gameserver.model.skills.L2Skill;
 import l2r.gameserver.model.variables.NpcVariables;
 import l2r.gameserver.network.NpcStringId;
@@ -60,7 +59,6 @@ import l2r.gameserver.util.Util;
 import l2r.util.Rnd;
 
 import instances.AbstractInstance;
-import quests.Q10286_ReunionWithSirra.Q10286_ReunionWithSirra;
 
 /**
  * Ice Queen's Castle (Ultimate Battle) instance zone.
@@ -134,7 +132,7 @@ public final class IceQueensCastleUltimateBattle extends AbstractInstance
 		new Location(114024, -112278, -11210),
 		new Location(113865, -112435, -11210),
 		new Location(113865, -112276, -11210),
-		
+	
 	};
 	private static final Location[] STATUES_LOC =
 	{
@@ -1258,14 +1256,14 @@ public final class IceQueensCastleUltimateBattle extends AbstractInstance
 		}
 		for (L2PcInstance channelMember : channel.getMembers())
 		{
-			QuestState st = channelMember.getQuestState(Q10286_ReunionWithSirra.class.getSimpleName());
-			if ((st == null) || !st.isCompleted())
-			{
-				SystemMessage sm = SystemMessage.getSystemMessage(SystemMessageId.C1_S_QUEST_REQUIREMENT_IS_NOT_SUFFICIENT_AND_CANNOT_BE_ENTERED);
-				sm.addPcName(channelMember);
-				player.getParty().getCommandChannel().broadcastPacket(sm);
-				return false;
-			}
+			// QuestState st = channelMember.getQuestState(Q10286_ReunionWithSirra.class.getSimpleName());
+			// if ((st == null) || !st.isCompleted())
+			// {
+			// SystemMessage sm = SystemMessage.getSystemMessage(SystemMessageId.C1_S_QUEST_REQUIREMENT_IS_NOT_SUFFICIENT_AND_CANNOT_BE_ENTERED);
+			// sm.addPcName(channelMember);
+			// player.getParty().getCommandChannel().broadcastPacket(sm);
+			// return false;
+			// }
 			
 			if (channelMember.getLevel() < MIN_LEVEL)
 			{
