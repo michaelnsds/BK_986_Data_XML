@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<categories>
+		<kitekat>
+		<cat id="1" name="Enemy" desc="Monsters, seeds, raid bosses, fishing, etc." icon="icon.skill4108"/>
+		<cat id="2" name="Combat" desc="Everything related to PvP, kills, deaths, etc." icon="icon.skill0536"/>
+		<cat id="3" name="Clan" desc="Sieges, fortress battles, clan wars, etc." icon="icon.skill0946"/>
+		<cat id="4" name="Others" desc="All the skill related stuff, crafting, etc." icon="icon.skill5739"/>
+		</kitekat>
+	</categories>
+	
+	
+	<!-- Enemy achievements -->
+	<achievement id="1" cat="1" type="mobkill" desc="You need to kill %need% monsters of any kind in any area.">
+		<levels>
+			<lvl id="1" name="Monster's Blood Sucker" icon="icon.skill1539" need="5" fame="5"/>
+			<lvl id="2" name="Monster's Blood Sucker" icon="icon.skill1539" need="50" fame="50"/>
+			<lvl id="3" name="Monster's Blood Sucker" icon="icon.skill1539" need="500" fame="500"/>
+			<lvl id="4" name="Monster's Blood Sucker" icon="icon.skill1539" need="1000" fame="1000"/>
+			<lvl id="5" name="Monster's Blood Sucker" icon="icon.skill1539" need="1500" fame="1500"/>
+			<lvl id="6" name="Monster's Blood Sucker" icon="icon.skill1539" need="2000" fame="2000"/>
+			<lvl id="7" name="Monster's Blood Sucker" icon="icon.skill1539" need="5000" fame="5000"/>
+			<lvl id="8" name="Monster's Blood Sucker" icon="icon.skill1539" need="10000" fame="10000"/>
+			<lvl id="9" name="Monster's Blood Sucker" icon="icon.skill1539" need="25000" fame="25000"/>
+		</levels>
+		<rewards multiplayer="1.25">
+			<item id="57" count="10" name="Adena"/>
+			<item id="5570" count="5" name="Water Mantra"/>
+			<item id="5572" count="5" name="Wind Mantra"/>
+			<item id="5574" count="5" name="Fire Mantra"/>
+		</rewards>
+	</achievement>
+	<achievement id="2" cat="1" type="raidkill" desc="You need to kill %need% raidbosses.">
+		<levels>
+			<lvl id="1" name="Raid Slayer" icon="icon.skill4289" need="1" fame="20"/>
+			<lvl id="2" name="Raid Slayer" icon="icon.skill4289" need="5" fame="100"/>
+			<lvl id="3" name="Raid Slayer" icon="icon.skill4289" need="25" fame="500"/>
+			<lvl id="4" name="Raid Slayer" icon="icon.skill4289" need="100" fame="2500"/>
+			<lvl id="5" name="Raid Slayer" icon="icon.skill4289" need="500" fame="10000"/>
+			<lvl id="6" name="Raid Slayer" icon="icon.skill4289" need="1000" fame="25000"/>
+			<lvl id="7" name="Raid Slayer" icon="icon.skill4289" need="2500" fame="50000"/>
+		</levels>
+		<rewards multiplayer="1.25">
+			<item id="57" count="10" name="Adena"/>
+			<item id="5570" count="5" name="Water Mantra"/>
+			<item id="5572" count="5" name="Wind Mantra"/>
+			<item id="5574" count="5" name="Fire Mantra"/>
+		</rewards>
+	</achievement>
+	<achievement id="3" cat="1" type="seedkill" desc="Extract %need% seeds using 'Growth Accelerator' item.">
+		<levels>
+			<lvl id="1" name="Seed Master" icon="icon.skill1532" need="1" fame="20"/>
+			<lvl id="2" name="Seed Master" icon="icon.skill1532" need="10" fame="100"/>
+			<lvl id="3" name="Seed Master" icon="icon.skill1532" need="30" fame="300"/>
+			<lvl id="4" name="Seed Master" icon="icon.skill1532" need="90" fame="900"/>
+			<lvl id="5" name="Seed Master" icon="icon.skill1532" need="180" fame="1800"/>
+			<lvl id="6" name="Seed Master" icon="icon.skill1532" need="360" fame="3600"/>
+			<lvl id="7" name="Seed Master" icon="icon.skill1532" need="500" fame="5000"/>
+			<lvl id="8" name="Seed Master" icon="icon.skill1532" need="1000" fame="25000"/>
+		</levels>
+		<rewards multiplayer="1.25">
+			<item id="57" count="10" name="Adena"/>
+			<item id="5570" count="5" name="Water Mantra"/>
+			<item id="5572" count="5" name="Wind Mantra"/>
+			<item id="5574" count="5" name="Fire Mantra"/>
+		</rewards>
+	</achievement>
+	<achievement id="4" cat="1" type="catchFish" desc="Catch %need% fishes from the island waters.">
+		<levels>
+			<lvl id="1" name="Fisherman" icon="icon.skill1319" need="5" fame="10"/>
+			<lvl id="2" name="Fisherman" icon="icon.skill1319" need="10" fame="50"/>
+			<lvl id="3" name="Fisherman" icon="icon.skill1319" need="50" fame="250"/>
+			<lvl id="4" name="Fisherman" icon="icon.skill1319" need="100" fame="500"/>
+			<lvl id="5" name="Fisherman" icon="icon.skill1319" need="500" fame="2500"/>
+			<lvl id="6" name="Fisherman" icon="icon.skill1319" need="1000" fame="5000"/>
+			<lvl id="7" name="Fisherman" icon="icon.skill1319" need="5000" fame="25000"/>
+			<lvl id="8" name="Fisherman" icon="icon.skill1319" need="10000" fame="50000"/>
+		</levels>
+		<rewards multiplayer="1.25">
+			<item id="57" count="10" name="Adena"/>
+			<item id="5570" count="5" name="Water Mantra"/>
+			<item id="5572" count="5" name="Wind Mantra"/>
+			<item id="5574" count="5" name="Fire Mantra"/>
+		</rewards>
+	</achievement>
+	<achievement id="5" cat="1" type="treasureBox" desc="Unlock %need% treasure boxes using keys which are obtained from monsters.">
+		<levels>
+			<lvl id="1" name="Treasure Hunter" icon="icon.skill0629" need="1" fame="10"/>
+			<lvl id="2" name="Treasure Hunter" icon="icon.skill0629" need="10" fame="50"/>
+			<lvl id="3" name="Treasure Hunter" icon="icon.skill0629" need="50" fame="250"/>
+			<lvl id="4" name="Treasure Hunter" icon="icon.skill0629" need="100" fame="500"/>
+			<lvl id="5" name="Treasure Hunter" icon="icon.skill0629" need="500" fame="2500"/>
+			<lvl id="6" name="Treasure Hunter" icon="icon.skill0629" need="1000" fame="5000"/>
+			<lvl id="7" name="Treasure Hunter" icon="icon.skill0629" need="5000" fame="25000"/>
+			<lvl id="8" name="Treasure Hunter" icon="icon.skill0629" need="10000" fame="50000"/>
+		</levels>
+		<rewards multiplayer="1.25">
+			<item id="57" count="10" name="Adena"/>
+			<item id="5570" count="5" name="Water Mantra"/>
+			<item id="5572" count="5" name="Wind Mantra"/>
+			<item id="5574" count="5" name="Fire Mantra"/>
+		</rewards>
+	</achievement>
+	<achievement id="6" cat="1" type="antharasKill" desc="Defeat %need% antharas.">
+		<levels>
+			<lvl id="1" name="Antharas Slayer" icon="icon.skill0629" need="1" fame="10"/>
+			<lvl id="2" name="Antharas Slayer" icon="icon.skill0629" need="2" fame="50"/>
+		</levels>
+		<rewards multiplayer="1.25">
+			<item id="57" count="10" name="Adena"/>
+			<item id="5570" count="5" name="Water Mantra"/>
+			<item id="5572" count="5" name="Wind Mantra"/>
+			<item id="5574" count="5" name="Fire Mantra"/>
+		</rewards>
+	</achievement>
+	<achievement id="7" cat="1" type="baiumKill" desc="Defeat %need% baiums.">
+		<levels>
+			<lvl id="1" name="Baium Slayer" icon="icon.skill0629" need="1" fame="10"/>
+			<lvl id="2" name="Baium Slayer" icon="icon.skill0629" need="2" fame="50"/>
+		</levels>
+		<rewards multiplayer="1.25">
+			<item id="57" count="10" name="Adena"/>
+			<item id="5570" count="5" name="Water Mantra"/>
+			<item id="5572" count="5" name="Wind Mantra"/>
+			<item id="5574" count="5" name="Fire Mantra"/>
+		</rewards>
+	</achievement>
+	
+	
+	<!-- Combo achievements -->
+	<achievement id="11" cat="2" type="pvpkill" desc="You need to win %need% PvPs.">
+		<levels>
+			<lvl id="1" name="Head Hunter" icon="icon.skill0522" need="10" fame="10"/>
+			<lvl id="2" name="Head Hunter" icon="icon.skill0522" need="50" fame="50"/>
+			<lvl id="3" name="Head Hunter" icon="icon.skill0522" need="200" fame="200"/>
+			<lvl id="4" name="Head Hunter" icon="icon.skill0522" need="400" fame="400"/>
+			<lvl id="5" name="Head Hunter" icon="icon.skill0522" need="750" fame="750"/>
+			<lvl id="6" name="Head Hunter" icon="icon.skill0522" need="1500" fame="1500"/>
+			<lvl id="7" name="Head Hunter" icon="icon.skill0522" need="3000" fame="3000"/>
+			<lvl id="8" name="Head Hunter" icon="icon.skill0522" need="5000" fame="5000"/>
+			<lvl id="9" name="Head Hunter" icon="icon.skill0522" need="10000" fame="10000"/>
+			<lvl id="10" name="Head Hunter" icon="icon.skill0522" need="15000" fame="15000"/>
+			<lvl id="11" name="Head Hunter" icon="icon.skill0522" need="30000" fame="30000"/>
+			<lvl id="12" name="Head Hunter" icon="icon.skill0522" need="50000" fame="50000"/>
+		</levels>
+		<rewards multiplayer="1.25">
+			<item id="57" count="10" name="Adena"/>
+			<item id="5570" count="5" name="Water Mantra"/>
+			<item id="5572" count="5" name="Wind Mantra"/>
+			<item id="5574" count="5" name="Fire Mantra"/>
+		</rewards>
+	</achievement>
+	<achievement id="12" cat="2" type="killingspree" desc="You need to kill %need% players in a row.">
+		<levels>
+			<lvl id="1" name="Killing Spree" icon="icon.skill0130" need="10" fame="10"/>
+			<lvl id="2" name="Killing Spree" icon="icon.skill0130" need="50" fame="50"/>
+			<lvl id="3" name="Killing Spree" icon="icon.skill0130" need="200" fame="200"/>
+			<lvl id="4" name="Killing Spree" icon="icon.skill0130" need="400" fame="400"/>
+			<lvl id="5" name="Killing Spree" icon="icon.skill0130" need="750" fame="750"/>
+			<lvl id="6" name="Killing Spree" icon="icon.skill0130" need="1500" fame="1500"/>
+			<lvl id="7" name="Killing Spree" icon="icon.skill0130" need="3000" fame="3000"/>
+			<lvl id="8" name="Killing Spree" icon="icon.skill0130" need="5000" fame="5000"/>
+			<lvl id="9" name="Killing Spree" icon="icon.skill0130" need="10000" fame="10000"/>
+			<lvl id="10" name="Killing Spree" icon="icon.skill0130" need="15000" fame="15000"/>
+			<lvl id="11" name="Killing Spree" icon="icon.skill0130" need="30000" fame="30000"/>
+			<lvl id="12" name="Killing Spree" icon="icon.skill0130" need="50000" fame="50000"/>
+		</levels>
+		<rewards multiplayer="1.25">
+			<item id="57" count="10" name="Adena"/>
+			<item id="5570" count="5" name="Water Mantra"/>
+			<item id="5572" count="5" name="Wind Mantra"/>
+			<item id="5574" count="5" name="Fire Mantra"/>
+		</rewards>
+	</achievement>
+	<achievement id="13" cat="2" type="summonkill" desc="Kill %need% summons.">
+		<levels>
+			<lvl id="1" name="Summon Hater" icon="icon.skill1276" need="1" fame="20"/>
+			<lvl id="2" name="Summon Hater" icon="icon.skill1276" need="5" fame="100"/>
+			<lvl id="3" name="Summon Hater" icon="icon.skill1276" need="50" fame="200"/>
+			<lvl id="4" name="Summon Hater" icon="icon.skill1276" need="100" fame="400"/>
+			<lvl id="5" name="Summon Hater" icon="icon.skill1276" need="250" fame="750"/>
+			<lvl id="6" name="Summon Hater" icon="icon.skill1276" need="500" fame="1500"/>
+			<lvl id="7" name="Summon Hater" icon="icon.skill1276" need="1000" fame="3000"/>
+			<lvl id="8" name="Summon Hater" icon="icon.skill1276" need="5000" fame="9000"/>
+			<lvl id="9" name="Summon Hater" icon="icon.skill1276" need="9000" fame="16000"/>
+		</levels>
+		<rewards multiplayer="1.25">
+			<item id="57" count="10" name="Adena"/>
+			<item id="5570" count="5" name="Water Mantra"/>
+			<item id="5572" count="5" name="Wind Mantra"/>
+			<item id="5574" count="5" name="Fire Mantra"/>
+		</rewards>
+	</achievement>
+	<achievement id="14" cat="2" type="die" desc="You need to die %need% times.">
+		<levels>
+			<lvl id="1" name="Emo Satisfaction" icon="icon.skill0060" need="10" fame="10"/>
+			<lvl id="2" name="Emo Satisfaction" icon="icon.skill0060" need="50" fame="20"/>
+			<lvl id="3" name="Emo Satisfaction" icon="icon.skill0060" need="200" fame="30"/>
+			<lvl id="4" name="Emo Satisfaction" icon="icon.skill0060" need="1000" fame="40"/>
+			<lvl id="5" name="Emo Satisfaction" icon="icon.skill0060" need="5000" fame="50"/>
+		</levels>
+		<rewards multiplayer="1.25">
+			<item id="57" count="2" name="Adena"/>
+			<item id="5570" count="1" name="Water Mantra"/>
+			<item id="5572" count="1" name="Wind Mantra"/>
+			<item id="5574" count="1" name="Fire Mantra"/>
+		</rewards>
+	</achievement>
+	
+	
+	<!-- Clan achievements -->
+	<achievement id="31" cat="3" type="siegewon" desc="Win %need% castle battles.">
+		<levels>
+			<lvl id="1" name="Siege field conqueror" icon="icon.skill0316" need="1" fame="500"/>
+			<lvl id="2" name="Siege field conqueror" icon="icon.skill0316" need="3" fame="1000"/>
+			<lvl id="3" name="Siege field conqueror" icon="icon.skill0316" need="6" fame="6000"/>
+			<lvl id="4" name="Siege field conqueror" icon="icon.skill0316" need="10" fame="10000"/>
+			<lvl id="5" name="Siege field conqueror" icon="icon.skill0316" need="50" fame="50000"/>
+		</levels>
+		<rewards multiplayer="1.25">
+			<item id="57" count="10" name="Adena"/>
+			<item id="5570" count="5" name="Water Mantra"/>
+			<item id="5572" count="5" name="Wind Mantra"/>
+			<item id="5574" count="5" name="Fire Mantra"/>
+		</rewards>
+	</achievement>
+	<achievement id="32" cat="3" type="fortressewon" desc="Win %need% fortress battles.">
+		<levels>
+			<lvl id="1" name="Fortress Winner" icon="icon.skill0316" need="1" fame="500"/>
+			<lvl id="2" name="Fortress Winner" icon="icon.skill0316" need="3" fame="1000"/>
+			<lvl id="3" name="Fortress Winner" icon="icon.skill0316" need="6" fame="6000"/>
+			<lvl id="4" name="Fortress Winner" icon="icon.skill0316" need="10" fame="10000"/>
+			<lvl id="5" name="Fortress Winner" icon="icon.skill0316" need="50" fame="50000"/>
+		</levels>
+		<rewards multiplayer="1.25">
+			<item id="57" count="10" name="Adena"/>
+			<item id="5570" count="5" name="Water Mantra"/>
+			<item id="5572" count="5" name="Wind Mantra"/>
+			<item id="5574" count="5" name="Fire Mantra"/>
+		</rewards>
+	</achievement>
+	
+	
+	<!-- Others achievements -->
+	<achievement id="41" cat="4" type="ress" desc="Ressurect %need% players.">
+		<levels>
+			<lvl id="1" name="Resurrection" icon="icon.skill1254" need="10" fame="10"/>
+			<lvl id="2" name="Resurrection" icon="icon.skill1254" need="50" fame="50"/>
+			<lvl id="3" name="Resurrection" icon="icon.skill1254" need="200" fame="200"/>
+			<lvl id="4" name="Resurrection" icon="icon.skill1254" need="400" fame="400"/>
+			<lvl id="5" name="Resurrection" icon="icon.skill1254" need="750" fame="750"/>
+			<lvl id="6" name="Resurrection" icon="icon.skill1254" need="1500" fame="1500"/>
+			<lvl id="7" name="Resurrection" icon="icon.skill1254" need="3000" fame="3000"/>
+			<lvl id="8" name="Resurrection" icon="icon.skill1254" need="5000" fame="5000"/>
+			<lvl id="9" name="Resurrection" icon="icon.skill1254" need="10000" fame="10000"/>
+			<lvl id="10" name="Resurrection" icon="icon.skill1254" need="15000" fame="15000"/>
+			<lvl id="11" name="Resurrection" icon="icon.skill1254" need="30000" fame="30000"/>
+			<lvl id="12" name="Resurrection" icon="icon.skill1254" need="50000" fame="50000"/>
+		</levels>
+		<rewards multiplayer="1.25">
+			<item id="57" count="10" name="Adena"/>
+			<item id="5570" count="5" name="Water Mantra"/>
+			<item id="5572" count="5" name="Wind Mantra"/>
+			<item id="5574" count="5" name="Fire Mantra"/>
+		</rewards>
+	</achievement>
+	<achievement id="42" cat="4" type="mcrit" desc="Perform %need% magic criticals.">
+		<levels>
+			<lvl id="1" name="Wild Magic" icon="icon.skill0776" need="10" fame="10"/>
+			<lvl id="2" name="Wild Magic" icon="icon.skill0776" need="50" fame="50"/>
+			<lvl id="3" name="Wild Magic" icon="icon.skill0776" need="200" fame="200"/>
+			<lvl id="4" name="Wild Magic" icon="icon.skill0776" need="400" fame="400"/>
+			<lvl id="5" name="Wild Magic" icon="icon.skill0776" need="750" fame="750"/>
+			<lvl id="6" name="Wild Magic" icon="icon.skill0776" need="1500" fame="1500"/>
+			<lvl id="7" name="Wild Magic" icon="icon.skill0776" need="3000" fame="3000"/>
+			<lvl id="8" name="Wild Magic" icon="icon.skill0776" need="5000" fame="5000"/>
+			<lvl id="9" name="Wild Magic" icon="icon.skill0776" need="10000" fame="10000"/>
+			<lvl id="10" name="Wild Magic" icon="icon.skill0776" need="15000" fame="15000"/>
+			<lvl id="11" name="Wild Magic" icon="icon.skill0776" need="30000" fame="30000"/>
+			<lvl id="12" name="Wild Magic" icon="icon.skill0776" need="50000" fame="50000"/>
+		</levels>
+		<rewards multiplayer="1.25">
+			<item id="57" count="10" name="Adena"/>
+			<item id="5570" count="5" name="Water Mantra"/>
+			<item id="5572" count="5" name="Wind Mantra"/>
+			<item id="5574" count="5" name="Fire Mantra"/>
+		</rewards>
+	</achievement>
+	<achievement id="43" cat="4" type="crit" desc="Make %need% critical attacks.">
+		<levels>
+			<lvl id="1" name="Death Whisper" icon="icon.skill0777" need="10" fame="10"/>
+			<lvl id="2" name="Death Whisper" icon="icon.skill0777" need="50" fame="50"/>
+			<lvl id="3" name="Death Whisper" icon="icon.skill0777" need="200" fame="200"/>
+			<lvl id="4" name="Death Whisper" icon="icon.skill0777" need="400" fame="400"/>
+			<lvl id="5" name="Death Whisper" icon="icon.skill0777" need="750" fame="750"/>
+			<lvl id="6" name="Death Whisper" icon="icon.skill0777" need="1500" fame="1500"/>
+			<lvl id="7" name="Death Whisper" icon="icon.skill0777" need="3000" fame="3000"/>
+			<lvl id="8" name="Death Whisper" icon="icon.skill0777" need="5000" fame="5000"/>
+			<lvl id="9" name="Death Whisper" icon="icon.skill0777" need="10000" fame="10000"/>
+			<lvl id="10" name="Death Whisper" icon="icon.skill0777" need="15000" fame="15000"/>
+			<lvl id="11" name="Death Whisper" icon="icon.skill0777" need="30000" fame="30000"/>
+			<lvl id="12" name="Death Whisper" icon="icon.skill0777" need="50000" fame="50000"/>
+		</levels>
+		<rewards multiplayer="1.25">
+			<item id="57" count="10" name="Adena"/>
+			<item id="5570" count="5" name="Water Mantra"/>
+			<item id="5572" count="5" name="Wind Mantra"/>
+			<item id="5574" count="5" name="Fire Mantra"/>
+		</rewards>
+	</achievement>
+	<achievement id="44" cat="4" type="craft" desc="Craft %need% items.">
+		<levels>
+			<lvl id="1" name="No Money No Honey" icon="icon.skill1368" need="1" fame="20"/>
+			<lvl id="2" name="No Money No Honey" icon="icon.skill1368" need="5" fame="100"/>
+			<lvl id="3" name="No Money No Honey" icon="icon.skill1368" need="20" fame="400"/>
+			<lvl id="4" name="No Money No Honey" icon="icon.skill1368" need="40" fame="800"/>
+			<lvl id="5" name="No Money No Honey" icon="icon.skill1368" need="60" fame="1200"/>
+			<lvl id="6" name="No Money No Honey" icon="icon.skill1368" need="80" fame="1600"/>
+			<lvl id="7" name="No Money No Honey" icon="icon.skill1368" need="100" fame="2000"/>
+			<lvl id="8" name="No Money No Honey" icon="icon.skill1368" need="200" fame="4000"/>
+			<lvl id="9" name="No Money No Honey" icon="icon.skill1368" need="300" fame="6000"/>
+			<lvl id="10" name="No Money No Honey" icon="icon.skill1368" need="400" fame="8000"/>
+			<lvl id="11" name="No Money No Honey" icon="icon.skill1368" need="500" fame="10000"/>
+			<lvl id="12" name="No Money No Honey" icon="icon.skill1368" need="600" fame="12000"/>
+		</levels>
+		<rewards multiplayer="1.25">
+			<item id="57" count="10" name="Adena"/>
+			<item id="5570" count="5" name="Water Mantra"/>
+			<item id="5572" count="5" name="Wind Mantra"/>
+			<item id="5574" count="5" name="Fire Mantra"/>
+		</rewards>
+	</achievement>
+	<achievement id="45" cat="4" type="enchantBlessSuccess" desc="Enchant blessed success %need% .">
+		<levels>
+			<lvl id="1" name="Blessed Enchant success" icon="icon.skill1368" need="1" fame="20"/>
+			<lvl id="2" name="Blessed Enchant success" icon="icon.skill1368" need="5" fame="100"/>
+		</levels>
+		<rewards multiplayer="1.25">
+			<item id="57" count="10" name="Adena"/>
+			<item id="5570" count="5" name="Water Mantra"/>
+			<item id="5572" count="5" name="Wind Mantra"/>
+			<item id="5574" count="5" name="Fire Mantra"/>
+		</rewards>
+	</achievement>
+	<achievement id="46" cat="4" type="enchantNormalSuccess" desc="Enchant normal success %need% .">
+		<levels>
+			<lvl id="1" name="Normal Enchant success" icon="icon.skill1368" need="1" fame="20"/>
+			<lvl id="2" name="Normal Enchant success" icon="icon.skill1368" need="5" fame="100"/>
+		</levels>
+		<rewards multiplayer="1.25">
+			<item id="57" count="10" name="Adena"/>
+			<item id="5570" count="5" name="Water Mantra"/>
+			<item id="5572" count="5" name="Wind Mantra"/>
+			<item id="5574" count="5" name="Fire Mantra"/>
+		</rewards>
+	</achievement>
+	<achievement id="47" cat="4" type="highestEnchant" desc="Getting harder %need% .">
+		<levels>
+			<lvl id="1" name="Highest Item Enchant" icon="icon.skill1368" need="5" fame="20"/>
+			<lvl id="2" name="Highest Item Enchant" icon="icon.skill1368" need="10" fame="100"/>
+		</levels>
+		<rewards multiplayer="1.25">
+			<item id="57" count="10" name="Adena"/>
+			<item id="5570" count="5" name="Water Mantra"/>
+			<item id="5572" count="5" name="Wind Mantra"/>
+			<item id="5574" count="5" name="Fire Mantra"/>
+		</rewards>
+	</achievement>
+</list>
