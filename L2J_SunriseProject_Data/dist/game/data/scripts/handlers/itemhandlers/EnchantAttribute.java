@@ -54,6 +54,7 @@ public class EnchantAttribute implements IItemHandler
 			return false;
 		}
 		
+		activeChar.setQuickVar("All_ATTRIBUTES", forceUse);
 		activeChar.setActiveEnchantAttrItemId(item.getObjectId());
 		activeChar.sendPacket(new ExChooseInventoryAttributeItem(item));
 		return true;
