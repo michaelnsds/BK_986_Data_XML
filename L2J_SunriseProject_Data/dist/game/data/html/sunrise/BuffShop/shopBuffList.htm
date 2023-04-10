@@ -1,0 +1,44 @@
+<html noscrollbar><title>%title%</title>
+<body>
+<center>
+<table align="center" width=290 height=325 background=L2UI_CT1.Windows_DF_Drawer_Bg_Darker border=0>
+	<tr>
+		<td>
+			<table align="Center" width=275>
+				<tr>
+					<td width=9></td>
+					<td width=80 align="Center"><button action="bypass -h voice .buffshop" value="Main Menu" width="80" height="20" back="L2UI_CT1.Button_DF_Calculator" fore="L2UI_CT1.Button_DF"></td>
+					<td width=150 align="Center"><edit var="box" width=150 height=15></td>
+				</tr>
+			</table>
+			<br>
+			<table align="center" width=280>
+				<tr>
+					<td width=140 align="Center"><button action="bypass -h buffshop setPrice $box <%page%>" value="Set Price" width="60" height="20" back="L2UI_CT1.Button_DF_Calculator" fore="L2UI_CT1.Button_DF"></td>
+					<td width=140 align="Center"><button action="bypass -h buffshop title $box" value="Set Title" width="60" height="20" back="L2UI_CT1.Button_DF_Calculator" fore="L2UI_CT1.Button_DF"></td>
+				</tr>
+			</table>
+			<br>
+			<table align="center" width=280>
+			<tr>
+				<td width=125 align="Center"><font name="CreditTextNormal">Buff Price: </font><font color="00FFFF"><%price%></font></td>
+				<td width=90 align="Center"><font name="CreditTextNormal">In Shop: </font><font color="00FFFF">%inshop%</font></td>
+				<td width=90 align="Center"><font name="CreditTextNormal">My Buffs: </font><font color="00FFFF">%buffsNumber%</font></td>
+			</tr>
+			</table>
+			<br>
+			<table align="center" width="280">
+				%list%
+			</table>
+		</td>
+	</tr>
+</table
+<table align="center" width=290 height=30 background=L2UI_CT1.Windows_DF_Drawer_Bg_Darker border=0 CELLSPACING=4>
+	<tr>
+		<td width=130 align="Left">%prev%</td>
+		<td width=5 align="Center"><font name="CreditTextNormal" color="00FFFF">%curPage%</font></td>
+		<td width=130 align="Right">%next%</td>
+	</tr>
+</table>
+</center>
+</body></html>

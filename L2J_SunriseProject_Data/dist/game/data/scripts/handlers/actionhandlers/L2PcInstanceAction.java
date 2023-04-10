@@ -18,6 +18,7 @@
  */
 package handlers.actionhandlers;
 
+import l2r.features.sellBuffEngine.BuffShopManager;
 import l2r.gameserver.GeoData;
 import l2r.gameserver.enums.CtrlIntention;
 import l2r.gameserver.enums.InstanceType;
@@ -81,7 +82,19 @@ public class L2PcInstanceAction implements IActionHandler
 		{
 			final L2PcInstance player = target.getActingPlayer();
 			// Check if this L2PcInstance has a Private Store
-			if (player.getPrivateStoreType() != PrivateStoreType.NONE)
+			if (BuffShopManager.getInstance().getSellers().containsKey(target.getObjectId()))
+			{
+				if (!activeChar.isInsideRadius(target, 150, true, false))
+				{
+					final Location destination = GeoData.getInstance().moveCheck(activeChar, player);
+					activeChar.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, destination);
+					return false;
+				}
+				
+				BuffShopManager.getInstance().showShop(target.getActingPlayer(), activeChar);
+				activeChar.sendPacket(ActionFailed.STATIC_PACKET);
+			}
+			else if (player.getPrivateStoreType() != PrivateStoreType.NONE)
 			{
 				activeChar.getAI().setIntention(CtrlIntention.AI_INTENTION_INTERACT, player);
 			}
@@ -91,7 +104,7 @@ public class L2PcInstanceAction implements IActionHandler
 				if (player.isAutoAttackable(activeChar))
 				{
 					if ((player.isCursedWeaponEquipped() && (activeChar.getLevel() < CURSED_WEAPON_VICTIM_MIN_LEVEL)) //
-					|| (activeChar.isCursedWeaponEquipped() && (player.getLevel() < CURSED_WEAPON_VICTIM_MIN_LEVEL)))
+						|| (activeChar.isCursedWeaponEquipped() && (player.getLevel() < CURSED_WEAPON_VICTIM_MIN_LEVEL)))
 					{
 						activeChar.sendPacket(ActionFailed.STATIC_PACKET);
 					}
